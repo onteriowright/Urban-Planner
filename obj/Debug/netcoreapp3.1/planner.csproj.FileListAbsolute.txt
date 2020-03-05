@@ -1,0 +1,11 @@
+/home/onteriowright/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.1/planner.csprojAssemblyReference.cache
+/home/onteriowright/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.1/planner.AssemblyInfoInputs.cache
+/home/onteriowright/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.1/planner.AssemblyInfo.cs
+/home/onteriowright/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.1/planner
+/home/onteriowright/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.1/planner.deps.json
+/home/onteriowright/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.1/planner.runtimeconfig.json
+/home/onteriowright/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.1/planner.runtimeconfig.dev.json
+/home/onteriowright/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.1/planner.dll
+/home/onteriowright/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.1/planner.pdb
+/home/onteriowright/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.1/planner.dll
+/home/onteriowright/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.1/planner.pdb
