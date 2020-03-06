@@ -21,9 +21,13 @@ namespace Planner
       }
     }
 
-    public Building(string address)
+    public Building(string address, int stories, double width, double depth, string name)
     {
       _address = address;
+      Stories = stories;
+      Width = width;
+      Depth = depth;
+      Name = name;
     }
 
     public void Construct(DateTime date)

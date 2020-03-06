@@ -9,6 +9,7 @@ namespace Planner
     public string MayorName { get; set; }
     public int CityEstablished { get; set; }
     public List<Building> BuildingsInCity = new List<Building>();
+    public List<City> NameOfCity = new List<City>();
 
     public City(string city, string mayor, int year)
     {
@@ -26,6 +27,10 @@ namespace Planner
     public void AddBuildingToCity(Building nameOfBuilding)
     {
       BuildingsInCity.Add(nameOfBuilding);
+    }
+    public void AddCity(City nameOfCity)
+    {
+      NameOfCity.Add(nameOfCity);
     }
   }
 }

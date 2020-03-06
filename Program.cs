@@ -7,37 +7,13 @@ namespace Planner
   {
     static void Main(string[] args)
     {
-      Building BridgeStoneArena = new Building("512 8th Avenue")
-      {
-        Width = 20,
-        Depth = 10,
-        Stories = 3,
-        Name = "Bridge Stone"
-      };
+      Building BridgeStoneArena = new Building("512 8th Avenue", 3, 20, 10, "Bridge Stone");
 
-      Building MarathonMusicWorks = new Building("212 8th Avenue")
-      {
-        Width = 20,
-        Depth = 10,
-        Stories = 3,
-        Name = "Marathon Music Works"
-      };
+      Building MarathonMusicWorks = new Building("212 8th Avenue", 3, 20, 10, "Marathon Music works");
 
-      Building PrincessHotChicken = new Building("812 8th Avenue")
-      {
-        Width = 20,
-        Depth = 10,
-        Stories = 3,
-        Name = "Princess Hot Chicken"
-      };
+      Building PrincessHotChicken = new Building("812 8th Avenue", 3, 20, 10, "Princess Hot Chicken");
 
-      Building GalleriaMall = new Building("713 Post Oak Avenue")
-      {
-        Width = 18,
-        Depth = 21,
-        Stories = 4,
-        Name = "Galleria Mall"
-      };
+      Building GalleriaMall = new Building("713 Post Oak Avenue", 4, 18, 21, "Galleria Mall");
 
       BridgeStoneArena.Purchase("Onterio Wright");
       BridgeStoneArena.Construct(DateTime.Now.ToLocalTime());
@@ -56,28 +32,45 @@ namespace Planner
       GalleriaMall.Designer("Danyeal Wright");
 
       City Nashville = new City("Nashville", "Holden Parker", 2020);
+      City Conroe = new City("Conroe", "Akemo Wright", 2020);
       City Houston = new City("Houston", "Onterio Wright", 2020);
       City Dallas = new City("Dallas", "Danyeal Wright", 2020);
 
-      Nashville.PrintCity();
-      Houston.PrintCity();
-      Dallas.PrintCity();
+      Nashville.AddCity(Nashville);
+      Houston.AddCity(Houston);
+      Dallas.AddCity(Dallas);
+      Houston.AddCity(Conroe);
 
       Nashville.AddBuildingToCity(PrincessHotChicken);
       Nashville.AddBuildingToCity(MarathonMusicWorks);
       Nashville.AddBuildingToCity(BridgeStoneArena);
 
-      Nashville.AddBuildingToCity(GalleriaMall);
+      Houston.AddBuildingToCity(GalleriaMall);
 
       foreach (Building building in Nashville.BuildingsInCity)
       {
         building.Print();
       }
+
       foreach (Building building in Houston.BuildingsInCity)
       {
         building.Print();
       }
 
+      foreach (City city in Dallas.NameOfCity)
+      {
+        city.PrintCity();
+      }
+
+      foreach (City city in Houston.NameOfCity)
+      {
+        city.PrintCity();
+      }
+
+      foreach (City city in Nashville.NameOfCity)
+      {
+        city.PrintCity();
+      }
     }
   }
 }
