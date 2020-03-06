@@ -12,7 +12,7 @@ namespace Planner
         Width = 20,
         Depth = 10,
         Stories = 3,
-        Name = "Brigde Stone"
+        Name = "Bridge Stone"
 
       };
       Building TwoOneTwoEigth = new Building("212 8th Avenue")
