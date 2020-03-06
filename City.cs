@@ -18,9 +18,9 @@ namespace Planner
     }
     public void PrintCity()
     {
-      Console.WriteLine(CityName);
-      Console.WriteLine(MayorName);
-      Console.WriteLine(CityEstablished);
+      Console.WriteLine($"City: {CityName}");
+      Console.WriteLine($"Mayor: {MayorName}");
+      Console.WriteLine($"Date established: {CityEstablished}");
       Console.WriteLine("===============================");
     }
     public void AddBuildingToCity(Building nameOfBuilding)

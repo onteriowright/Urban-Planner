@@ -28,7 +28,7 @@ namespace Planner
 
     public void Construct(DateTime date)
     {
-      _dateConstructed = DateTime.Now;
+      _dateConstructed = date;
     }
     public void Purchase(string purchaserName)
     {
